@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :useres, only: [:index, :create]
+  resources :users, only: [:index, :create]
 end

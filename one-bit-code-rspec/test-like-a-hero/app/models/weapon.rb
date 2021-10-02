@@ -6,7 +6,7 @@ class Weapon < ApplicationRecord
   validates :power_step, numericality: { greater_than: 99, less_than_or_equal_to: 9800 }
 
   def current_power
-    power_base + ((level - 1) * power_step)
+    self.power_base + ((self.level - 1) * self.power_step)
   end
 
   def title
